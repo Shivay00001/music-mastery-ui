@@ -1,9 +1,11 @@
 version: '3.8'
+
 services:
-  app:
+  ui:
     build: .
     ports:
-      - "8082:8000"
+      - "7860:7860"
+    volumes:
+      - ./:/app
     environment:
-      - PYTHONUNBUFFERED=1
-    restart: unless-stopped
+      - MUBERT_API_KEY=${MUBERT_API_KEY:-}

@@ -47,3 +47,13 @@ The application will launch a local web server (usually at `http://127.0.0.1:786
 
 ## License
 This project is licensed under the terms provided in the LICENSE file.
+
+## 🐳 Docker Support
+
+Run the web interface easily via Docker:
+
+`ash
+docker compose up --build
+`
+
+The UI will be available at http://localhost:7860
